@@ -22,7 +22,7 @@ blog_button:
 
 # Navigation buttons in the front page.
 nav:
-    - {title: 项目, description: 查看我的项目, url: 'https://github.com/chm1995'}
+    - {title: 项目, description: 查看我的项目, url: 'https://github.com/Haiming-Chen'}
     - {title: 订阅, description: 邮件订阅本站, url: 'http://www.chenhaiming.top/2017/02/hello,my-blog'}
     - {title: 关于, description: 了解更多关于我, url: 'https://chm1995.github.io/'}
     # - {title: Another Button, description: A button, url: 'http://example.com'}
@@ -39,7 +39,7 @@ comment:
 # Social
 social:
     weibo: chm1995
-    github: chm1995
+    github: Haiming-Chen
     twitter: 
     gplus: 
     mail: 3508417@qq.com

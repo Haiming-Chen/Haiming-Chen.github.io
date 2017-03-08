@@ -32,29 +32,41 @@ date: 2017-03-08 16:00:00.000000000 +09:00
 ***1.BluetoothAdapter下的方法***
 //开始搜索
 startDiscovery()
+
 //取消搜索
 cancelDiscovery() 
+
 //直接打开蓝牙
 enable()
+
 //直接关闭蓝牙
 disable()
+
 //弹窗申请权限打开蓝牙
 Intemtenabler=new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
 startActivityForResult(enabler,reCode);
+
 //获得本地蓝牙名字
 getName()
+
 //本地蓝牙地址
 getAddress()
+
 //获取本地蓝牙适配器
 getDefaultAdapter()
+
 //根据蓝牙地址获取远程蓝牙设备
 getRemoteDevice(String address)
+
 //获取本地蓝牙适配器当前状态
 getState()
+
 //判断当前是否正在查找设备
 isDiscovering()
+
 //判断蓝牙是否打开
 isEnabled()
+
 //根据名称，UUID创建并返回BluetoothServerSocket
 listenUsingRfcommWithServiceRecord(String name,UUID uuid)
 

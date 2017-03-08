@@ -4,17 +4,17 @@ title: Android Bluetooth-搜索蓝牙(一)
 date: 2017-03-08 16:00:00.000000000 +09:00
 ---
 
-#####前言
+前言
 >Hello，现在的工作，必须要学习Bluetooth的一些使用,在这里记录一下
 
-##一.蓝牙权限
+一.蓝牙权限
 不管如何,开发蓝牙,首先加上权限再说
 ```
 <uses-permission android:name="android.permission.BLUETOOTH"/>
 <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 ```
-##二.蓝牙API
+二.蓝牙API
 1.BluetoothAdapter   
 本地蓝牙适配器(如:自己的手机)
 
@@ -28,9 +28,9 @@ date: 2017-03-08 16:00:00.000000000 +09:00
 开放的服务器socket，它监听接受的请求（与TCP ServerSocket类似）
 
 ------------------
-##三.使用
-####1.BluetoothAdapter下的方法
->//开始搜索
+三.使用
+***1.BluetoothAdapter下的方法***
+//开始搜索
 startDiscovery()
 //取消搜索
 cancelDiscovery() 
@@ -59,7 +59,7 @@ isEnabled()
 listenUsingRfcommWithServiceRecord(String name,UUID uuid)
 
 --------------------
-####***2.实际使用***
+***2.实际使用***
 ```
 // 获取本地蓝牙适配器
 BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();

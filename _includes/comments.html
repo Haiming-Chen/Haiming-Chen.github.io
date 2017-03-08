@@ -1,5 +1,6 @@
 <section class="post-comments">
-<div class="ds-share flat" data-thread-key="此处请替换为当前文章的thread-key" data-title="此处请替换为分享时显示的标题" data-images="此处请替换为分享时显示的图片的链接地址" data-content="此处请替换为分享时显示的内容" data-url="此处请替换为分享时显示的链接地址">
+<div class="ds-share flat" data-thread-key="<#article/id#>" data-title="<#article/title#>" data-images="{{ site.url }}{{site.baseurl}}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}"
+                    data-content="{{ content | strip_html | truncate:80 }} | Hux Blog，@chm 的个人博客" data-content="此处请替换为分享时显示的内容" data-url="{{site.url}}{{site.baseurl}}{{page.url}}">
     <div class="ds-share-inline">
       <ul  class="ds-share-icons-16">
       	
@@ -14,6 +15,7 @@
       </div>
     </div>
  </div>
+ </br>
 <!-- 多说评论框 start -->
 	<div class="ds-thread" data-category="<#article/category/id#>" data-thread-key="<#article/id#>" data-title="<#article/title#>" data-author-key="<#article/author/id#>"></div>
 <!-- 多说评论框 end -->

@@ -1,10 +1,5 @@
 <section class="post-comments">
-<div class="ds-share flat" 
-data-thread-key="<#article/id#>" 
-data-title="{{page.title}}" 
-data-images="{{ site.url }}{{site.baseurl}}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}"
-data-content="{{ content | strip_html | truncate:80 }}"  
-data-url="{{site.url}}{{site.baseurl}}{{page.url}}">
+<div class="ds-share" data-thread-key="<#article/id#>" data-title="{{page.title}}" data-images="{{ site.url }}{{site.baseurl}}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" data-content="{{ content | strip_html | truncate:100 }}" data-url="{{site.url}}{{site.baseurl}}{{page.url}}">
     <div class="ds-share-inline">
       <ul  class="ds-share-icons-16">
       	
@@ -19,8 +14,7 @@ data-url="{{site.url}}{{site.baseurl}}{{page.url}}">
       </div>
     </div>
  </div>
- </br>
- <hr/>
+<HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#987cb9,direction:145,strength:15)" width="80%" color=#987cb9 SIZE=1>
 <!-- 多说评论框 start -->
 	<div class="ds-thread" data-category="<#article/category/id#>" data-thread-key="<#article/id#>" data-title="<#article/title#>" data-author-key="<#article/author/id#>"></div>
 <!-- 多说评论框 end -->
